@@ -32,6 +32,11 @@ export default function Home() {
           </button>
         </div>
       </main>
+
+
+      <section>
+        
+      </section>
     </div>
   );
 }
