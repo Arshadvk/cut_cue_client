@@ -22,7 +22,7 @@ export default function Login() {
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-12 bg-white">
         <h1 className="text-2xl font-bold ">Login into Cut Cue</h1>
         <p className="mb-4 text-gray-500">
-          Create an account or log in to book and manage your appointments.
+          Login to book and manage your appointments.
         </p>
 
         <div className="w-full space-y-4">
@@ -36,10 +36,12 @@ export default function Login() {
             type="text"
             placeholder="Enter Your Password"
           />
+          <Link href="/otp" >
           <button className="border p-5 border-gray-300 rounded-2xl mb- w-full bg-black text-white font-bold">
             {" "}
             Login
           </button>
+          </Link>
           <div className="flex items-center my-4">
             <div className="flex-grow border-t border-gray-300"></div>
             <span className="px-4 text-sm text-gray-500">or</span>
@@ -62,16 +64,18 @@ export default function Login() {
               Continue with Facebook
             </span>
           </button>
+
+          <div className="flex items-center justify-center" style={{ textAlign: "center" }}>
+            <p className="text-center text-gray-500">
+              Don't have an account ?{" "}
+              <Link className="text-black font-bold" href="/user-register">
+                Sign Up
+              </Link>
+            </p>
+          </div>
+
         </div>
 
-        <div className="flex items-center justify-center" style={{textAlign:"center"}}>
-          <p className="text-center text-gray-500">
-            Don't have an account ?{" "}
-            <Link className="text-black font-bold" href="/user-register">
-              Sign Up
-            </Link>
-          </p>
-        </div>
       </div>
     </div>
   );
