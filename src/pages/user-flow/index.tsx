@@ -17,7 +17,7 @@ export default function UserFlow() {
 
 
       {/* Right Side - Text Content */}
-      <div className="md:w-1/2 flex flex-col justify-center items-start p-12 bg-white">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-12 bg-white">
         <h1 className="text-2xl font-bold mb-4">Sign up / Log in</h1>
 
         <div onClick={() => Router.push('/user-login')} className='border p-5 border-gray-300 rounded-2xl mb-8 w-full'>
