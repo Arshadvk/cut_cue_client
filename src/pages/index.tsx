@@ -3,7 +3,7 @@ import GlassCard from "@/components/home/GlassCard";
 export default function Home() {
   const data: never[] = []
   return (
-    <div className="bg-white min-h-screen font-serif text-gray-900">
+    <div className="bg-white min-h-screen  text-gray-900">
 
       <main
         className="text-center py-20 md:py-60 px-6 max-w-4xl mx-auto bg-cover bg-center bg-no-repeat"
@@ -38,8 +38,19 @@ export default function Home() {
 
       <section className="container mx-auto">
         <h4 className="text-2xl my-4 font-bold">Recommended : </h4>
-        <GlassCard data={data} />
+        <GlassCard  />
       </section>
+
+      <section className="container mx-auto">
+        <h4 className="text-2xl my-4 font-bold">Near By You : </h4>
+        <GlassCard  />
+      </section>
+
+
+       <section className="container mx-auto">
+        
+      </section>
+
 
     </div>
   );
