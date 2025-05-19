@@ -33,7 +33,6 @@ export default function GlassCard() {
     <div className="w-full px-6 py-1">
       <Swiper
         modules={[Pagination]}
-        pagination={{ clickable: true }}
         spaceBetween={20}
         slidesPerView={1.5}
         breakpoints={{
@@ -58,13 +57,13 @@ export default function GlassCard() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-white/10 to-transparent"></div>
 
               {/* Content */}
-              <div className="relative z-10 flex flex-col gap-3">
+              <div className="relative z-10 flex flex-col gap-3 ">
                 <div className="flex items-center justify-between mt-5">
                   <div className="text-white text-xs">
                     <h2 className="text-white md:text-xl font-semibold">{card.title}</h2>
                     <p className="opacity-80">{card.location}</p>
                   </div>
-                  <button className="bg-white text-black text-sm font-medium px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition">
+                  <button className="bg-white/10 backdrop-blur-lg text-white text-sm font-medium px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition">
                     + More Info
                   </button>
                 </div>

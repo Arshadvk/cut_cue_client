@@ -1,3 +1,4 @@
+import AppCard from "@/components/home/AppCard";
 import GlassCard from "@/components/home/GlassCard";
 
 export default function Home() {
@@ -38,18 +39,16 @@ export default function Home() {
 
       <section className="container mx-auto">
         <h4 className="text-2xl my-4 font-bold">Recommended : </h4>
-        <GlassCard  />
+        <GlassCard />
       </section>
 
       <section className="container mx-auto">
         <h4 className="text-2xl my-4 font-bold">Near By You : </h4>
-        <GlassCard  />
+        <GlassCard />
       </section>
 
 
-       <section className="container mx-auto">
-        
-      </section>
+     <AppCard />
 
 
     </div>
