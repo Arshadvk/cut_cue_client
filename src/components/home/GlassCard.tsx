@@ -11,21 +11,25 @@ export default function GlassCard() {
       image: '/assets/images/card/card-1.jpg',
       title: 'Man Of Cave',
       location: 'Khaleej Al Arabi Street',
+      type : 'Beauty Salon'
     },
     {
       image: '/assets/images/card/card-2.jpg',
       title: 'Man Of Cave',
       location: 'Khaleej Al Arabi Street',
+      type : 'Nails Salon'
     },
     {
       image: '/assets/images/card/card-3.avif',
       title: 'Man Of Cave',
       location: 'Khaleej Al Arabi Street',
+      type : 'Men Salon'
     },
     {
       image: '/assets/images/card/card-4.avif',
       title: 'Mikas Beauty Salon',
       location: 'Al Muntazah, Zone 1',
+      type : 'Men Salon'
     },
   ];
 
@@ -34,7 +38,7 @@ export default function GlassCard() {
       <Swiper
         modules={[Pagination]}
         spaceBetween={20}
-        slidesPerView={1.5}
+        slidesPerView={2}
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -49,7 +53,7 @@ export default function GlassCard() {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="relative  w-full h-[280px] rounded-[30px] overflow-hidden shadow-2xl bg-white/10 backdrop-blur-lg border border-white/20 flex flex-col justify-end p-5">
+            <div className="relative  w-full h-[200px] md:h-[280px] rounded-[30px] overflow-hidden  bg-white/10 backdrop-blur-lg border border-white/20 flex flex-col justify-end p-5">
               {/* Background Image */}
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${card.image})` }} ></div>
 
@@ -61,11 +65,9 @@ export default function GlassCard() {
                 <div className="flex items-center justify-between mt-5">
                   <div className="text-white text-xs">
                     <h2 className="text-white md:text-xl font-semibold">{card.title}</h2>
-                    <p className="opacity-80">{card.location}</p>
+                    <p className="opacity-80 mb-2">{card.location}</p>
+                    <span className='border p-1 px-2 rounded-2xl backdrop-blur-md  border-white/20'>{card.type}</span>
                   </div>
-                  <button className="bg-white/10 backdrop-blur-lg text-white text-sm font-medium px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition">
-                    + More Info
-                  </button>
                 </div>
               </div>
             </div>

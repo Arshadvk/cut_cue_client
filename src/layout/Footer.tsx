@@ -3,35 +3,41 @@ import Router  from "next/router";
 
 export default function Footer() {
     return (
-            <footer className="bg-gray-100 mt-10 row-start-3 flex gap-[24px] flex-wrap items-center justify-center ">
+            <footer className="bg-gray-100 mt-10 row-start-3 flex gap-[24px] flex-wrap items-center justify-center px-10 md:py-0">
                 <div className="footer-main bg-surface">
                     <div className="container">
                         <div className="content-footer md:py-[60px] py-10 flex justify-between flex-wrap gap-y-8">
                             <div className="company-infor basis-1/4 max-lg:basis-full pr-7">
                                 <a href="/" className="logo inline-block">
                                     <div className="heading3 w-fit">
-
+                                        
                                         <h3 className="font-bold text-3xl py-4">Cutcue</h3>
+                                        
                                     </div>
                                 </a>
                                 <div className="bg-white text-center p-2 rounded-4xl border-1 border-gray-300 w-50">
                                     <span className="font-bold">Get the app</span>
                                     <i className="ri-apple-fill px-1"></i>
                                     <i className="ri-android-fill px-1"></i>
+                                    
                                 </div>
-
-                                <div className="flex gap-3 mt-3">
-                                    <div className="flex flex-col">
-                                        <span className="text-button">Mail:</span>
-                                        <span className="text-button mt-3">Phone:</span>
-
+ <div className="list-social flex items-center gap-6 mt-4">
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i className="ri-facebook-circle-fill"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i className="ri-instagram-fill"></i>
+                                        </a>
+                                        <a href="https://www.twitter.com/" target="_blank">
+                                            <i className="ri-twitter-fill"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/" target="_blank">
+                                            <i className="ri-youtube-fill"></i>
+                                        </a>
+                                        <a href="https://www.pinterest.com/" target="_blank">
+                                            <i className="ri-pinterest-fill"></i>
+                                        </a>
                                     </div>
-                                    <div className="flex flex-col">
-                                        <span className="">info@cutcue.co</span>
-                                        <span className="mt-[14px]">+91 756 094 3415</span>
-
-                                    </div>
-                                </div>
                             </div>
                             <div className="right-content flex flex-wrap gap-y-8 basis-3/4 max-lg:basis-full">
                                 <div className="list-nav flex justify-between basis-2/3 max-md:basis-full gap-4">
@@ -67,23 +73,7 @@ export default function Footer() {
                                             </button>
                                         </form>
                                     </div>
-                                    <div className="list-social flex items-center gap-6 mt-4">
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i className="ri-facebook-circle-fill"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i className="ri-instagram-fill"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i className="ri-twitter-fill"></i>
-                                        </a>
-                                        <a href="https://www.youtube.com/" target="_blank">
-                                            <i className="ri-youtube-fill"></i>
-                                        </a>
-                                        <a href="https://www.pinterest.com/" target="_blank">
-                                            <i className="ri-pinterest-fill"></i>
-                                        </a>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
