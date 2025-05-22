@@ -1,5 +1,6 @@
 import AppCard from "@/components/home/AppCard";
 import GlassCard from "@/components/home/GlassCard";
+import SearchCard from "@/components/search/card";
 
 export default function Search() {
     const data: never[] = []
@@ -16,7 +17,7 @@ export default function Search() {
                 </form>
             </div>
 
-
+            <SearchCard />
 
         </div>
     );
