@@ -4,7 +4,7 @@ import SearchCard from "@/components/search/SearchCard";
 export default function Search() {
 
     return (
-        <div className="bg-white min-h-screen  text-gray-900">
+        <div className="bg-white min-h-screen text-gray-900 md:w-1/2 lg:w-1/3">
             <div className="w-full h-full relative">
                 <form action="post">
                     <input type="email" placeholder="Enter your e-mail"
@@ -16,7 +16,12 @@ export default function Search() {
                 </form>
             </div>
 
+            <section className="">
+            <div className="">
             <SearchCard />
+            </div>
+
+            </section>
 
         </div>
 
