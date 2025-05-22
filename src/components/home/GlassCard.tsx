@@ -65,7 +65,7 @@ export default function GlassCard() {
                 <div className="flex items-center justify-between mt-5">
                   <div className="text-white text-xs">
                     <h2 className="text-white md:text-xl font-semibold">{card.title}</h2>
-                    <p className="opacity-80 mb-2">{card.location}</p>
+                    <p className="opacity-80 mb-2 text-[8px]">{card.location}</p>
                     <span className='border p-1 px-2 rounded-2xl backdrop-blur-md  border-white/20'>{card.type}</span>
                   </div>
                 </div>

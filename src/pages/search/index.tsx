@@ -1,9 +1,5 @@
-import AppCard from "@/components/home/AppCard";
-import GlassCard from "@/components/home/GlassCard";
-import SearchCard from "@/components/search/card";
-
 export default function Search() {
-    const data: never[] = []
+    
     return (
         <div className="bg-white min-h-screen  text-gray-900">
             <div className="w-full h-full relative">
@@ -16,9 +12,6 @@ export default function Search() {
                     </button>
                 </form>
             </div>
-
-            <SearchCard />
-
         </div>
     );
 }
